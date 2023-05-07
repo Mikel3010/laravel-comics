@@ -5,10 +5,16 @@
     </div>
     <div class="container-series">
         <div class="current">CURRENT SERIES</div>
-        <div class="series">
+        <div class="main__series">
             <div class="serie">
-                <div class="img"><img src='https://picsum.photos/200/300' alt=""></div>
-                <div class="title"></div>
+                @foreach ($comics as $comic)
+                <div class="img">
+                    <img src='https://picsum.photos/200/300' alt="">
+                    <div class="title">
+                        <p><a href="">{{$comic['title']}}</a></p>
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
         <div class="more">

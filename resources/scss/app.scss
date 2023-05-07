@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-
+// header
 .header{
     &__container{
         justify-content: space-between;
@@ -35,19 +35,29 @@
         margin-bottom: 0;
     }
 }
+// /header
+// main
+.main{
+    &__series{
+        .serie{
+            display: flex;
+            padding-top: 55px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .img{
+            padding-bottom: 3.125rem;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
 .jumbotron {
     height: 300px;
     display: flex;
     background-image: url(../img/jumbotron.jpg);
-}
-.series{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 55px;
-}
-.serie{
-    width: calc(100% / 6);
-    padding: 10px;
 }
 
 img{
@@ -66,7 +76,7 @@ img{
     background-color: black;
 }
 .title{
-    color: white;
+    max-width: 50%;
 }
 .more{
     display: flex;
@@ -79,7 +89,10 @@ img{
     border-style: none;
     padding: 10px 40px;
 }
+// /main
+
 .footer{
+    // footer top
     &__top{
         padding: 2.5rem 0;
         li{
@@ -100,6 +113,8 @@ img{
             width: 55px;
         }
     }
+    // /footer top
+    // footer mani
     &__main{
         li{
             list-style: none;
@@ -123,6 +138,8 @@ img{
             color: white;
         }
     }
+    // /footer main
+    // footer down
     &__down{
         li{
             list-style: none;
@@ -158,4 +175,5 @@ img{
         }
         h2{color: #0282f9;}
     }
+    // /footer down
 }

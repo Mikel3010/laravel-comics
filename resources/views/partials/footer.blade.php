@@ -1,4 +1,5 @@
 <footer>
+    {{-- footer top --}}
     <div class="footer__top">
         <ul class="d-flex">
             <li>
@@ -38,6 +39,8 @@
             </li>
         </ul>
     </div>
+    {{-- /footer top --}}
+    {{-- footer main --}}
     <div class="footer__main d-flex">
         <div class="comics-shop">
             <div class="comics">
@@ -90,6 +93,8 @@
             <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
         </div>
     </div>
+    {{-- /footer main --}}
+    {{-- footer down --}}
     <div class="footer__down d-flex">
         <div class="container-button">
             <button>SIGN-UP NOW!</button>
@@ -105,4 +110,5 @@
             </ul>
         </div>
     </div>
+    {{-- /footer down --}}
 </footer>
