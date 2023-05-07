@@ -1,6 +1,161 @@
 @import "~bootstrap/scss/bootstrap";
 
+.header{
+    &__container{
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 90px;
+        }
+    }
+    &__container_nav{
+        display: flex;
+        align-items: center;
+    }
+    &__nav{
+        li{
+            list-style: none;
+            padding-top: 60px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .blue{
+            border-bottom: 1px solid #0282f9;
+            padding-bottom: 60px;
+        }
+        .blue a{
+            color: #0282f9;
+        }
+        ul{
+            display: flex;
+            padding: 0;
+        }
+        margin-bottom: 0;
+    }
+}
+.jumbotron {
+    height: 300px;
+    display: flex;
+    background-image: url(../img/jumbotron.jpg);
+}
+.series{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 55px;
+}
+.serie{
+    width: calc(100% / 6);
+    padding: 10px;
+}
 
-body {
-    background-color: yellow;
+img{
+    height: 90%;
+    width: 100%;
+}
+.current{
+    position: absolute;
+    top: -10px;
+    color: white;
+    background-color: #0282f9;
+    padding: 10px 20px;
+}
+.container-series{
+    position: relative;
+    background-color: black;
+}
+.title{
+    color: white;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.more button{
+    background-color: #0282f9;
+    color: white;
+    border-style: none;
+    padding: 10px 40px;
+}
+.footer{
+    &__top{
+        padding: 2.5rem 0;
+        li{
+            list-style: none;
+        }
+        background-color: #0282f9;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        ul{
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            height: 55px;
+            width: 55px;
+        }
+    }
+    &__main{
+        li{
+            list-style: none;
+        }
+        a{
+            color: gray;
+            text-decoration: none;
+        }
+       
+        display: flex;
+        background-image: url(../img/footer-bg.jpg);
+        .logo-backgroud{
+            margin-left: auto;
+        }
+        .logo-backgroud img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        h3{
+            color: white;
+        }
+    }
+    &__down{
+        li{
+            list-style: none;
+        }
+        button{
+            background-color: #303030;
+            border: 1px #0282f9 solid;
+            color: white;
+            padding: 10px;
+            margin-left: 40px;
+        }
+        
+            display: flex;
+            justify-content: space-between;
+            background-color:#303030;
+            padding: 1.875rem 0;
+        
+        .container-button{
+            display: flex;
+            align-items: center;
+        }
+        .container_social{
+            display: flex;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        li{
+            padding-left: 10px;
+        }
+        h2{color: #0282f9;}
+    }
 }

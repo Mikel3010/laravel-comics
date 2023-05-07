@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-         @vite('resources/js/app.js')
-    </head>
-    <body>
-        <div class="container">
-            <h1>Template Classe 89</h1>
-            <img src="{{ Vite::asset('resources/img/pluto.webp') }}" alt="" srcset="">
+@extends('layouts.app')
+@section('page.main')
+<div>
+    <div class="jumbotron">
+    </div>
+    <div class="container-series">
+        <div class="current">CURRENT SERIES</div>
+        <div class="series">
+            <div class="serie">
+                <div class="img"><img src='https://picsum.photos/200/300' alt=""></div>
+                <div class="title"></div>
+            </div>
         </div>
-
-    </body>
-</html>
+        <div class="more">
+            <button>LOAD MORE</button>
+        </div>
+    </div>
+</div>
+    
+@endsection
