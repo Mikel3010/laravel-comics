@@ -20,6 +20,9 @@ Route::get('/', function () {
     return view('home',$data);
 });
 
-Route::get('/comic', function () {
-    return view('home');
-});
+Route::get('/comic/{index}', function ($index) {
+    $data =[
+        'comics'=> config('db')[$index]
+    ];
+    return view('comic',$data);
+})->name('comic');

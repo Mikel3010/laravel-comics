@@ -177,3 +177,62 @@ img{
     }
     // /footer down
 }
+// comic main
+.main{
+    &__comic{
+        position: relative;
+        .comic_main{
+            display: flex;
+            padding: 60px 0;
+        }
+        .comic_img{
+            position: absolute;
+            top: 170px;
+            left: 70px;
+        }
+        .comic_img img{
+            height: 150px;
+            width: 120px;
+        }
+        .blue_line{
+            height: 60px;
+            background-color: #0282f9;
+        }
+        .comic_green{
+            display: flex;
+            background-color: green;
+            margin-right: 50px;
+            justify-content: space-between;
+        }
+        .dropdown button{
+            background-color: green;
+            border: 0px;
+        }
+        .descripiont{
+            margin-right: 50px;
+        }
+        .green_left{
+            display: flex;
+            width: 80%;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .price{
+            color: white;
+        }
+        .comic_adv img{
+            height: 200px;
+            width: 200px;
+        }
+        .comic_footer{
+            display: flex;
+        }
+        .comic_talent{
+            width: 50%;
+        }
+        .comic_specs{
+            width: 50%;
+        }
+    }
+}

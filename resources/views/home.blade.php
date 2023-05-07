@@ -11,7 +11,7 @@
                 <div class="img">
                     <img src='https://picsum.photos/200/300' alt="">
                     <div class="title">
-                        <p><a href="">{{$comic['title']}}</a></p>
+                        <p><a href="{{route('comic',['index'=>$loop->index])}}">{{$comic['title']}}</a></p>
                     </div>
                 </div>
                 @endforeach
